@@ -9,7 +9,6 @@ package leetcode
  * @author Mr.Fox
  */
 
-
 /**
  * 1. Two Sum
  *
@@ -27,6 +26,28 @@ fun twoSum(nums: IntArray, target: Int): IntArray {
         }
     }
 
+    return intArrayOf()
+}
+/**
+ * 1. Two Sum
+ *
+ * @info Решение через HashMap
+ * @suppress Временная сложность O(n)
+ * */
+fun twoSum2(nums: IntArray, target: Int): IntArray {
+    if(nums.size < 2) return intArrayOf()
+
+    val hashMap = hashMapOf<Int, Int>()
+
+    for(n in nums.indices) {
+        val current = target - nums[n]
+
+        if(hashMap.containsKey(current)) {
+            return intArrayOf(n, hashMap[current] as Int)
+        }
+
+        hashMap[nums[n]] = n
+    }
     return intArrayOf()
 }
 

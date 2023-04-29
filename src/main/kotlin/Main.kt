@@ -1,4 +1,5 @@
-fun main(args: Array<String>) {
+import leetcode.twoSum2
 
+fun main(args: Array<String>) {
 }
 
