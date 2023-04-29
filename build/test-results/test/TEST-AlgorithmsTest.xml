@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="AlgorithmsTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2023-03-29T18:22:58" hostname="MacBook-Pro-igor.local" time="0.505">
+  <properties/>
+  <testcase name="test db service()" classname="AlgorithmsTest" time="0.487"/>
+  <testcase name="string reverse test()" classname="AlgorithmsTest" time="0.011"/>
+  <testcase name="fibonacci sequence test()" classname="AlgorithmsTest" time="0.001"/>
+  <system-out><![CDATA[Connecting to SQL Server ... [DB Service]
+{ModifiedById=410006E1-CA4E-4502-A9EC-E54D922D2C00, Description=, CreatedById=410006E1-CA4E-4502-A9EC-E54D922D2C00, ModifiedOn=2023-02-21 17:39:58.9160015, ExtCode=, Id=8ADB88CE-3468-441C-A5BC-04CF28E10A19, CreatedOn=2022-10-31 19:45:35.6989832, ProcessListeners=0, Name=Overdue, TSIApplicationGlobalStatusId=59B854CD-1639-49AB-AFEC-0D64323E257F}
+{ModifiedById=410006E1-CA4E-4502-A9EC-E54D922D2C00, Description=, CreatedById=410006E1-CA4E-4502-A9EC-E54D922D2C00, ModifiedOn=2023-02-21 17:39:58.9316475, ExtCode=, Id=96FB3D64-53EE-4EDF-8D2C-1FFDD831C048, CreatedOn=2022-10-31 19:45:35.7145709, ProcessListeners=0, Name=Waiting for Disbursement, TSIApplicationGlobalStatusId=CDBF5227-9747-44FD-A85F-B9726701BB72}
+{ModifiedById=410006E1-CA4E-4502-A9EC-E54D922D2C00, Description=, CreatedById=410006E1-CA4E-4502-A9EC-E54D922D2C00, ModifiedOn=2023-02-21 17:39:58.9472711, ExtCode=, Id=96110783-B868-4118-AAAB-2AB358D0AF97, CreatedOn=2022-10-31 19:45:35.7145709, ProcessListeners=0, Name=Canceled, TSIApplicationGlobalStatusId=A9FBF0A8-EE3E-4BC2-B98C-E587180D21EF}
+{ModifiedById=410006E1-CA4E-4502-A9EC-E54D922D2C00, Description=, CreatedById=410006E1-CA4E-4502-A9EC-E54D922D2C00, ModifiedOn=2023-02-21 17:39:58.9628993, ExtCode=, Id=F53646D3-C391-4402-B053-4593784C8D6E, CreatedOn=2022-10-31 19:45:35.7301946, ProcessListeners=0, Name=Active, TSIApplicationGlobalStatusId=F775CEB7-6F73-4C3A-B791-AE3002AEE183}
+{ModifiedById=410006E1-CA4E-4502-A9EC-E54D922D2C00, Description=, CreatedById=410006E1-CA4E-4502-A9EC-E54D922D2C00, ModifiedOn=2023-02-21 17:39:58.9785237, ExtCode=, Id=E525C7BE-F841-4682-80E9-72CCA8CE5224, CreatedOn=2022-10-31 19:45:35.7458225, ProcessListeners=0, Name=Prolonged, TSIApplicationGlobalStatusId=7D953579-C608-4466-954C-7F8BBE835E78}
+{ModifiedById=410006E1-CA4E-4502-A9EC-E54D922D2C00, Description=, CreatedById=410006E1-CA4E-4502-A9EC-E54D922D2C00, ModifiedOn=2023-02-21 17:39:58.9941545, ExtCode=, Id=E32D8500-7DAD-4A93-A3E7-A91A3FE28825, CreatedOn=2022-10-31 19:45:35.7614654, ProcessListeners=0, Name=Overpayment, TSIApplicationGlobalStatusId=342A2637-9EED-40B4-97B2-51D07E257653}
+{ModifiedById=D7737020-6F1D-4DD7-882F-01B4FE759900, Description=, CreatedById=410006E1-CA4E-4502-A9EC-E54D922D2C00, ModifiedOn=2023-02-28 08:22:30.7238070, ExtCode=, Id=BA76ACCA-B445-473E-8461-B0234F7DE1E6, CreatedOn=2022-10-31 19:45:35.7614654, ProcessListeners=0, Name=Signed, TSIApplicationGlobalStatusId=A252E07A-87CA-4252-B1CD-D6BC49D720F7}
+{ModifiedById=410006E1-CA4E-4502-A9EC-E54D922D2C00, Description=, CreatedById=410006E1-CA4E-4502-A9EC-E54D922D2C00, ModifiedOn=2023-02-21 17:39:59.0253799, ExtCode=, Id=25F226AD-C4BB-4CC7-B5BD-F4A167AFAEF5, CreatedOn=2022-10-31 19:45:35.7770868, ProcessListeners=0, Name=Closed, TSIApplicationGlobalStatusId=342A2637-9EED-40B4-97B2-51D07E257653}
+{ModifiedById=410006E1-CA4E-4502-A9EC-E54D922D2C00, Description=, CreatedById=410006E1-CA4E-4502-A9EC-E54D922D2C00, ModifiedOn=2023-02-21 17:39:59.0410091, ExtCode=, Id=94B0B910-B53B-45EB-A2E1-FD3BAF8971D7, CreatedOn=2022-10-31 19:45:35.7926907, ProcessListeners=0, Name=Closed in advance, TSIApplicationGlobalStatusId=342A2637-9EED-40B4-97B2-51D07E257653}
+{ModifiedById=410006E1-CA4E-4502-A9EC-E54D922D2C00, Description=, CreatedById=410006E1-CA4E-4502-A9EC-E54D922D2C00, ModifiedOn=2023-02-16 19:03:08.4916586, ExtCode=, Id=73175CAF-9772-4855-95EF-66374299EECD, CreatedOn=2023-02-16 19:03:08.3978878, ProcessListeners=0, Name=Disburse Returned, TSIApplicationGlobalStatusId=342A2637-9EED-40B4-97B2-51D07E257653}
+Connection closed... [DB Service]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
