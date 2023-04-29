@@ -36,18 +36,14 @@
 - [Observer (Наблюдатель)](src/main/kotlin/patterns/Observer.kt)
 - [Factory (Фабрика)](src/main/kotlin/patterns/Factory.kt)
 
-### Алгоритмы
+### Задачи с собеседования и Алгоритмы
+В это разделе лежит список самых распространенных задач, которые встречаются на
+собеседованиях. Материал основан как на личном опыте, так и на задачах из Интернета. 
+- [FizzBuzz](src/main/kotlin/algorithms/FizzBuzz.kt)
 - [Бинарный поиск](src/main/kotlin/algorithms/BinarySearch.kt)
 - [Числа Фибоначчи](src/main/kotlin/algorithms/Fibonacci.kt)
 - [Факториал числа](src/main/kotlin/algorithms/Factorial.kt)
-
-### Задачи с собеседования
-В это разделе лежит список самых распространненых задач, которые встречаются на
-собеседованиях. Материал основан как на личном опыте, так и на материалах из Интернета. 
-- [FizzBuzz](src/main/kotlin/algorithms/FizzBuzz.kt)
-- [Повторяющиеся элементы из списка](https://github.com/klesarev/kotlin-learn/tree/master/src/main/kotlin/interview#повторяющиеся-элементы-из-списка)
-- [Количество повторений в строке](https://github.com/klesarev/kotlin-learn/tree/master/src/main/kotlin/interview#количество-повторений-в-строке)
-- [Реверс (переворот строки)](https://github.com/klesarev/kotlin-learn/tree/master/src/main/kotlin/interview#переворот-строки)
+- [Переворот строки](src/main/kotlin/algorithms/StringReverse.kt)
 
 ### QA Kotlin recipes
 - [Allure](src/main/kotlin/qa/Allure.kt)
