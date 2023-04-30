@@ -30,6 +30,26 @@ fun maxSubArray(nums: IntArray): Int {
 }
 
 /**
+ * 167. Two Sum II - Input Array Is Sorted
+ *
+ * @info Решение через two pointers
+ * @suppress Временная сложность O(n)
+ * */
+fun twoSum3(numbers: IntArray, target: Int): IntArray {
+    var start = 0
+    var end = numbers.size - 1
+
+    while(start <= end) {
+        val sum = numbers[start] + numbers[end]
+        if (sum == target) return intArrayOf(start+1, end+1)
+        if (sum < target) start++ else end--
+    }
+
+    return intArrayOf()
+}
+
+
+/**
  * 287. Find the Duplicate Number
  *
  * @info Решение через hashSet
