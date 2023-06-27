@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="algorithms.LeetcodeKtTest" tests="16" skipped="0" failures="0" errors="0" timestamp="2023-06-27T17:40:22" hostname="MacBook-Pro-igor.local" time="0.145">
+  <properties/>
+  <testcase name="reverseArrayTest()" classname="algorithms.LeetcodeKtTest" time="0.065"/>
+  <testcase name="Test for 96" classname="algorithms.LeetcodeKtTest" time="0.023"/>
+  <testcase name="Test for 121" classname="algorithms.LeetcodeKtTest" time="0.001"/>
+  <testcase name="Test for 1" classname="algorithms.LeetcodeKtTest" time="0.001"/>
+  <testcase name="Test for 122" classname="algorithms.LeetcodeKtTest" time="0.001"/>
+  <testcase name="Test for 250052" classname="algorithms.LeetcodeKtTest" time="0.001"/>
+  <testcase name="factorialTest()" classname="algorithms.LeetcodeKtTest" time="0.002"/>
+  <testcase name="fibonacciTest()" classname="algorithms.LeetcodeKtTest" time="0.021"/>
+  <testcase name="Testing for pattern ()()" classname="algorithms.LeetcodeKtTest" time="0.001"/>
+  <testcase name="Testing for pattern (())" classname="algorithms.LeetcodeKtTest" time="0.001"/>
+  <testcase name="Testing for pattern (({}[()]))" classname="algorithms.LeetcodeKtTest" time="0.001"/>
+  <testcase name="Testing for pattern (]" classname="algorithms.LeetcodeKtTest" time="0.0"/>
+  <testcase name="Testing for pattern )string(" classname="algorithms.LeetcodeKtTest" time="0.001"/>
+  <testcase name="Testing for pattern (()" classname="algorithms.LeetcodeKtTest" time="0.0"/>
+  <testcase name="Testing for pattern (test)" classname="algorithms.LeetcodeKtTest" time="0.001"/>
+  <testcase name="Testing for pattern []{}" classname="algorithms.LeetcodeKtTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

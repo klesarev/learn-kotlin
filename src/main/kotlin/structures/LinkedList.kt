@@ -10,7 +10,6 @@ fun main(){
     var next: ListNode? = null
 
     while (cursor.next != null) {
-        next = cursor
         if (cursor.value == cursor.next!!.value) {
             cursor.next = cursor.next!!.next
         } else cursor = cursor.next!!

@@ -5,6 +5,7 @@ plugins {
     application
     kotlin("plugin.serialization") version "1.7.10"
     id("io.qameta.allure") version "2.11.2"
+    id("com.google.protobuf") version "0.9.3"
 
 }
 
@@ -13,10 +14,13 @@ version = "1.0-SNAPSHOT"
 
 val restAssuredVersion = "5.2.0"
 val allureVersion = "2.20.0"
-val koin_version= "3.3.0"
+val grpcVersion = "1.54.1"
+val grpcKotlinVersion = "1.3.0"
+val protobufVersion = "3.22.3"
 
 repositories {
     mavenCentral()
+    google()
 }
 
 dependencies {
@@ -35,12 +39,39 @@ dependencies {
 
     implementation ("com.codeborne:selenide:6.9.0")
 
-    // Koin Core features
-    implementation ("io.insert-koin:koin-core:$koin_version")
-    // Koin Test features
-    testImplementation ("io.insert-koin:koin-test-junit5:$koin_version")
-
     runtimeOnly("org.slf4j:slf4j-simple:2.0.5")
+
+    // protobuf
+    implementation("com.google.protobuf:protobuf-kotlin:$protobufVersion")
+    implementation("io.grpc:grpc-kotlin-stub:$grpcKotlinVersion")
+    implementation("io.grpc:grpc-protobuf:$grpcVersion")
+}
+
+protobuf {
+    protoc {
+        artifact = "com.google.protobuf:protoc:$protobufVersion"
+    }
+
+    plugins {
+        create("grpc") {
+            artifact = "io.grpc:protoc-gen-grpc-java:$grpcVersion"
+        }
+        create("grpckt") {
+            artifact = "io.grpc:protoc-gen-grpc-kotlin:$grpcKotlinVersion:jdk8@jar"
+        }
+    }
+
+    generateProtoTasks {
+        all().forEach {
+            it.plugins {
+                create("grpc")
+                create("grpckt")
+            }
+            it.builtins {
+                create("kotlin")
+            }
+        }
+    }
 }
 
 tasks.test {
